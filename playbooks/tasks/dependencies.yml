@@ -7,6 +7,25 @@
 - name: Update and upgrade Homebrew
   shell: brew update && brew upgrade && brew cleanup
   
+- name: Install openssh with Homebrew
+  homebrew: name=openssh state=latest install_options=with-keychain-support
+
+- name: Install libraries with Homebrew cask
+  homebrew_cask: name={{ item }}
+  with_items:
+   - android-studio
+   - google-chrome
+   - slack
+   - java
+   - intellij-idea
+   - ngrok
+   - skype
+   - spotify
+   - transmission
+   - vagrant
+   - virtualbox
+   - vlc
+
 - name: Install libraries with Homebrew
   homebrew: name={{ item }} state=latest
   with_items:
@@ -29,25 +48,6 @@
     - watchman
     - wget
     - yarn
-    
-- name: Install openssh with Homebrew
-  homebrew: name=openssh state=latest install_options=with-keychain-support
-
-- name: Install libraries with Homebrew cask
-  homebrew_cask: name={{ item }}
-  with_items:
-   - android-studio
-   - google-chrome
-   - slack
-   - java
-   - intellij-idea
-   - ngrok
-   - skype
-   - spotify
-   - transmission
-   - vagrant
-   - virtualbox
-   - vlc
    
 - name: Install Java libs
   homebrew: name={{ item }} state=latest
