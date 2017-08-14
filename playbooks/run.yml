@@ -14,3 +14,4 @@
       include: tasks/vim.yml
       when: editor == "vim" or editor == "both"
     - include: tasks/golang.yml
+    - include: tasks/vcprompt.yml
