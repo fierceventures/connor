@@ -1,0 +1,8 @@
+- name: Display hidden files
+  command: defaults write com.apple.finder AppleShowAllFiles YES
+
+- name: Increase keyboard repeat rate
+  command: defaults write -g KeyRepeat -int 1
+
+- name: Decrease key repeat time on hold press
+  command: defaults write -g InitialKeyRepeat -int 10

@@ -15,3 +15,4 @@
       when: editor == "VIM"
     - include: tasks/golang.yml
     - include: tasks/vcprompt.yml
+    - include: tasks/mac_settings.yml

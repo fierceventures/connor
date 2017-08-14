@@ -19,6 +19,8 @@
    - gyazo
    - postman
    - iterm2
+   - visual-studio-code
+   - spectacle
    - java
    - intellij-idea
    - ngrok
@@ -81,4 +83,5 @@
     global: yes
 
 - name: Install Oh-My-Zsh
-  command: bash -c "curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh) | sh"
+  command: bash -c "curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh"
+
