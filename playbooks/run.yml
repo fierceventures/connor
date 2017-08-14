@@ -1,17 +1,17 @@
 - hosts: targets
   gather_facts: False
   vars:
-    editor: "vim"
-    emacs_repo: "git@github.com:wearefierce/emacs.d.git"
-    vim_repo: "git@github.com:CalebMacdonaldBlack/myvimsetup.git"
+    editor: "VIM"
+    user_name: "Caleb MacDonald Black"
+    email: "calebmacdonaldblack@gmail.com"
   tasks:
     - include: tasks/dependencies.yml
     - include: tasks/dotfiles.yml
     - name: "Setup emacs editor"
       include: tasks/emacs.yml
-      when: editor == "emacs" or editor == "both"
+      when: editor == "EMACS"
     - name: "Setup vim editor"
       include: tasks/vim.yml
-      when: editor == "vim" or editor == "both"
+      when: editor == "VIM"
     - include: tasks/golang.yml
     - include: tasks/vcprompt.yml

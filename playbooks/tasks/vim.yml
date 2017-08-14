@@ -1,5 +1,2 @@
-- name: Vim - install vim config
-  git:
-    repo: "{{ vim_repo }}"
-    dest: ~/.vim.d
-    force: yes
+- name: Synchronize vim config
+  synchronize: src=~../../optional_files/vim/ dest=~

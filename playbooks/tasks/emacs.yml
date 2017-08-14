@@ -1,8 +1,5 @@
-- name: Emacs - install emacs config
-  git:
-    repo: "{{ emacs_repo }}"
-    dest: ~/.emacs.d
-    force: yes
+- name: Synchronize emacs config
+  synchronize: src=~../../optional_files/.emacs.d/ dest=~/.emacs.d
 
 - name: Emacs - Update and upgrade Homebrew
   shell: brew update && brew upgrade && brew cleanup
