@@ -1,4 +1,8 @@
-# dotfiles
+# Connor
+![Sarah Connor](https://vignette2.wikia.nocookie.net/terminator/images/5/51/Sarah_T2_gun.jpg)
+
+
+## dotfiles
 
 To be used with OSX
 
