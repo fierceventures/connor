@@ -1,0 +1,5 @@
+- name: Tap homebrew repositories
+  homebrew_tap: name={{ item }} state=present
+  with_items:
+    - caskroom/cask
+    - homebrew/core
