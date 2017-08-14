@@ -1,2 +1,8 @@
 - name: Synchronize dotfiles
   synchronize: src=~../../dotfiles/ dest=~
+
+- name: Transfer .bashrc template
+  template: src=~../../dotfiles_templates/.bashrc dest=~
+  
+- name: Transfer .gitconfig template
+  template: src=~../../dotfiles_templates/.gitconfig dest=~

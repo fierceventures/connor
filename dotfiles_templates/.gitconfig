@@ -1,0 +1,18 @@
+[color]
+    ui = true
+
+[core]
+    excludesfile = ~/.gitignore
+    editor = {{ editor }}
+    autocrlf = false
+    safecrlf = true
+
+[push]
+    default=simple
+
+[user]
+    name = {{ user_name }}
+    email = {{ email }}
+
+[alias]
+    lo = log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
