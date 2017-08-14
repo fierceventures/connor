@@ -1,0 +1,4 @@
+- hosts: targets
+  gather_facts: False
+  tasks:
+    - include: tasks/dependencies.yml
