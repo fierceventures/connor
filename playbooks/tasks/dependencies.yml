@@ -3,3 +3,65 @@
   with_items:
     - caskroom/cask
     - homebrew/core
+
+- name: Update and upgrade Homebrew
+  shell: brew update && brew upgrade && brew cleanup
+  
+- name: Install libraries with Homebrew
+  homebrew: name={{ item }} state=latest
+  with_items:
+    - awscli
+    - awsebcli
+    - bash-completion
+    - boot-clj
+    - direnv
+    - heroku
+    - imagemagick
+    - markdown
+    - nvm
+    - packer
+    - postgresql
+    - pyenv
+    - rbenv
+    - rlwrap
+    - terraform
+    - tmux
+    - watchman
+    - wget
+    - yarn
+    
+- name: Install openssh with Homebrew
+  homebrew: name=openssh state=latest install_options=with-keychain-support
+
+- name: Install libraries with Homebrew cask
+  homebrew_cask: name={{ item }}
+  with_items:
+   - android-studio
+   - google-chrome
+   - java
+   - intellij-idea
+   - ngrok
+   - skype
+   - spotify
+   - transmission
+   - vagrant
+   - virtualbox
+   - vlc
+   
+- name: Install Java libs
+  homebrew: name={{ item }} state=latest
+  with_items:
+    - flyway
+    - leiningen
+    - maven
+
+- name: Install Apex
+  command: curl https://raw.githubusercontent.com/apex/apex/master/install.sh | sh
+
+- name: upgrade pip
+  shell: pip install --upgrade pip
+  become: true
+
+- name: install virtualenv
+  shell: pip install virtualenv
+  become: true
