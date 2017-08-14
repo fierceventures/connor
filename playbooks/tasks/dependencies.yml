@@ -82,6 +82,7 @@
     name: re-natal
     global: yes
 
-- name: Install Oh-My-Zsh
-  command: bash -c "curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh"
-
+- name: Install "react-devtools" node.js package.
+  npm:
+    name: react-devtools
+    global: yes
