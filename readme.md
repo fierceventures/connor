@@ -20,7 +20,7 @@ $ sudo pip install ansible
 ## Installing
 
 ```
-git clone git@github.com:stuartrexking/dotfiles.git
+git clone git@github.com:wearefierce/connor.git
 cd dotfiles
 make
 ```
