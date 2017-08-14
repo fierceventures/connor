@@ -1,5 +1,5 @@
-- name: install vim config
+- name: Vim - install vim config
   git:
     repo: "{{ vim_repo }}"
-    dest: ~/.vim
+    dest: ~/.vim.d
     force: yes
