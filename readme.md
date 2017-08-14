@@ -21,6 +21,6 @@ $ sudo pip install ansible
 
 ```
 git clone git@github.com:wearefierce/connor.git
-cd dotfiles
+cd connor
 make
 ```
