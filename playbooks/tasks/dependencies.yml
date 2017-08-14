@@ -16,6 +16,9 @@
    - android-studio
    - google-chrome
    - slack
+   - gyazo
+   - postman
+   - iterm2
    - java
    - intellij-idea
    - ngrok
@@ -76,3 +79,6 @@
   npm:
     name: re-natal
     global: yes
+
+- name: Install Oh-My-Zsh
+  command: bash -c "curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh) | sh"
