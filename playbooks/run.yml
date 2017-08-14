@@ -13,3 +13,4 @@
     - name: "Setup vim editor"
       include: tasks/vim.yml
       when: editor == "vim" or editor == "both"
+    - include: tasks/golang.yml
