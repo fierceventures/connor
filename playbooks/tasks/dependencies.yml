@@ -39,6 +39,7 @@
     - bash-completion
     - boot-clj
     - direnv
+    - docker
     - heroku
     - imagemagick
     - markdown
