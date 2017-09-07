@@ -15,6 +15,7 @@
   with_items:
    - android-studio
    - docker
+   - expo-xde
    - google-chrome
    - slack
    - gyazo
@@ -28,6 +29,7 @@
    - skype
    - spotify
    - transmission
+   - terraform
    - vagrant
    - virtualbox
    - vlc
