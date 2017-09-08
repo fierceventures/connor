@@ -1,6 +1,5 @@
 " jk is escape
 inoremap jk <esc>
-inoremap kj <esc>
 " Jump long lines as standard lines
 nnoremap j gj
 nnoremap k gk

@@ -32,3 +32,5 @@ alias iuf="git ls-files --others --exclude-standard >> .gitignore"
 alias gsu="git_set_upstream"
 alias gfr="git fetch && git rebase"
 alias gcm="git commit -am"
+
+alias tf="terraform"
