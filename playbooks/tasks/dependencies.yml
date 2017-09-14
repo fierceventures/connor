@@ -21,6 +21,7 @@
    - postman
    - iterm2
    - visual-studio-code
+   - sublime-text
    - spectacle
    - java
    - intellij-idea
@@ -43,6 +44,7 @@
     - heroku
     - imagemagick
     - markdown
+    - neovim
     - nvm
     - packer
     - postgresql
