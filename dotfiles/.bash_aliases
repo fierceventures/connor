@@ -7,6 +7,10 @@ function mcd() {
     cd "$1"
 }
 
+function notify() {
+  osascript -e 'display notification "Terminal cmd" with title "Finished"'
+}
+
 # clear terminal window
 alias c='printf "\033c"'
 
@@ -30,6 +34,7 @@ alias gc="git checkout"
 alias gcnb="git checkout -b"
 alias iuf="git ls-files --others --exclude-standard >> .gitignore"
 alias gsu="git_set_upstream"
+alias notify="notify"
 alias gfr="git fetch && git rebase"
 alias gcm="git commit -am"
 
