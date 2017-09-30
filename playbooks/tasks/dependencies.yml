@@ -89,3 +89,8 @@
   npm:
     name: react-devtools
     global: yes
+
+- name: Install "phantomjs" node.js package.
+  npm:
+    name: phantomjs
+    global: yes
