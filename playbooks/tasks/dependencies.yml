@@ -40,6 +40,7 @@
     - awsebcli
     - bash-completion
     - boot-clj
+    - cocoapods
     - direnv
     - heroku
     - imagemagick
