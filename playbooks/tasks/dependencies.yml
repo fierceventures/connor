@@ -13,6 +13,7 @@
 - name: Install libraries with Homebrew cask
   homebrew_cask: name={{ item }}
   with_items:
+   - appcode
    - android-studio
    - docker
    - google-chrome
