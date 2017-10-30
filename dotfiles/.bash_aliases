@@ -25,6 +25,10 @@ alias l='ls -CF'
 git_set_upstream(){
   git push --set-upstream origin $(git symbolic-ref --short -q HEAD)
 }
+
+git_log_alias() {
+git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'
+}
   
 alias gp="git push"
 alias gfm="git checkout master && git fetch && git rebase"
@@ -37,6 +41,6 @@ alias gsu="git_set_upstream"
 alias notify="notify"
 alias gfr="git fetch && git rebase"
 alias gcm="git commit -am"
-alias gl= "git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
+alias gl="git_log_alias"
 
 alias tf="terraform"
