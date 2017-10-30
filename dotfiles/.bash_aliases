@@ -37,5 +37,6 @@ alias gsu="git_set_upstream"
 alias notify="notify"
 alias gfr="git fetch && git rebase"
 alias gcm="git commit -am"
+alias gl= "git log --graph --pretty=format':%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset'"
 
 alias tf="terraform"
