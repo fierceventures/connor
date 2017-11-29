@@ -44,3 +44,6 @@ alias gcm="git commit -am"
 alias gl="git_log_alias"
 
 alias tf="terraform"
+alias tfa="terraform apply -auto-approve"
+alias tfd="terraform destroy"
+alias tfp="terraform plan"
