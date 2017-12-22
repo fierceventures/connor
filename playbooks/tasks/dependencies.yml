@@ -43,6 +43,7 @@
     - boot-clj
     - cocoapods
     - direnv
+    - gnupg2
     - heroku
     - imagemagick
     - markdown
@@ -69,6 +70,9 @@
 
 - name: Install Apex
   command: bash -c "curl https://raw.githubusercontent.com/apex/apex/master/install.sh | sh"
+
+- name: Install Jekyll
+  command: bash -c "gem install jekyll bundler"
 
 - name: upgrade pip
   shell: pip install --upgrade pip
