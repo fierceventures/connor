@@ -11,6 +11,10 @@ function notify() {
   osascript -e 'display notification "Terminal cmd" with title "Finished"'
 }
 
+function p() {
+./$(basename -s .git `git config --get remote.origin.url`).sh "$@"
+}
+
 # clear terminal window
 alias c='printf "\033c"'
 
@@ -47,3 +51,4 @@ alias tf="terraform"
 alias tfa="terraform apply -auto-approve"
 alias tfd="terraform destroy"
 alias tfp="terraform plan"
+alias p="p"
