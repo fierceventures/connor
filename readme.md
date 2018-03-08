@@ -16,6 +16,9 @@ brew update
 brew install git
 sudo easy_install pip
 sudo pip install ansible
+git clone https://github.com/CalebMacdonaldBlack/connor.git
+cd connor
+make
 ```
 ## Installing
 
