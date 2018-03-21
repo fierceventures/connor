@@ -14,12 +14,15 @@ To be used with OSX
 1. Install [Ansible](http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-apt-ubuntu)
 
 ```
-$ xcode-select --install
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-$ brew update
-$ brew install git
-$ sudo easy_install pip
-$ sudo pip install ansible
+xcode-select --install && \
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && \
+brew update && \
+brew install git && \
+sudo easy_install pip && \
+sudo pip install ansible && \
+ git clone https://github.com/CalebMacdonaldBlack/connor.git && \
+cd connor && \
+make
 ```
 ## Installing
 
