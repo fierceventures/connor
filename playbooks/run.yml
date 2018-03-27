@@ -2,8 +2,8 @@
   gather_facts: False
   vars:
     editor: "VIM"
-    user_name: "Caleb MacDonald Black"
-    email: "calebmacdonaldblack@gmail.com"
+    user_name: "<GIT USER NAME HERE>"
+    email: "<GIT EMAIL HERE>"
   tasks:
     - include: tasks/dependencies.yml
     - include: tasks/dotfiles.yml
